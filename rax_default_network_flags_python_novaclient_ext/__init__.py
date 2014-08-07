@@ -87,5 +87,7 @@ def __pre_parse_args__():
 
 
 def __post_parse_args__(args):
+    if not 'rackspacecloud.com' in args.os_auth_url.lower():
+        return
     bind_args_to_resource_manager(args)
     add_modify_body_hook()
