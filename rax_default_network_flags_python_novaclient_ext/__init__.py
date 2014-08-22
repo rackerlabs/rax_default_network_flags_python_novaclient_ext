@@ -51,8 +51,8 @@ def add_modify_body_hook():
             # NOTE(tr3buchet) need to figure why this is being triggered on
             # network creates, quick fix for now..
             return
-        public = kwargs.get('public')
-        service_net = kwargs.get('service_net')
+        public = kwargs.get('public', True)
+        service_net = kwargs.get('service_net', True)
         networks = body['server'].get('networks') or []
         pub_dict = {'uuid': '00000000-0000-0000-0000-000000000000'}
         snet_dict = {'uuid': '11111111-1111-1111-1111-111111111111'}
