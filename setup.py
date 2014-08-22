@@ -17,10 +17,10 @@ import setuptools
 
 setuptools.setup(
     name="rax_default_network_flags_python_novaclient_ext",
-    version="0.2.3",
+    version="0.3.0",
     author="Trey Morris",
     author_email="trey.morris@rackspace.com",
-    url="https://github.com/rackspace/rax_default_network_flags_python_novaclient_ext",
+    url="https://github.com/rackerlabs/rax_default_network_flags_python_novaclient_ext",
     description="Novaclient Extension for Instance Default Network Flags",
     license="Apache License, Version 2.0",
     packages=["rax_default_network_flags_python_novaclient_ext"],
