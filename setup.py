@@ -17,7 +17,7 @@ import setuptools
 
 setuptools.setup(
     name="rax_default_network_flags_python_novaclient_ext",
-    version="0.3.0",
+    version="0.3.2",
     author="Trey Morris",
     author_email="trey.morris@rackspace.com",
     url="https://github.com/rackerlabs/rax_default_network_flags_python_novaclient_ext",
