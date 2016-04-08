@@ -17,7 +17,6 @@
 Instance create default networks extension
 """
 from novaclient import utils
-from novaclient.openstack.common import cliutils
 
 try:
     from novaclient.v2 import servers
@@ -28,13 +27,13 @@ except ImportError:
 
 
 def add_args():
-    cliutils.add_arg(shell.do_boot,
+    utils.add_arg(shell.do_boot,
         '--no-public',
         dest='public',
         action='store_false',
         default=True,
         help='Boot instance without public network connectivity.')
-    cliutils.add_arg(shell.do_boot,
+    utils.add_arg(shell.do_boot,
         '--no-service-net',
         dest='service_net',
         action='store_false',
